@@ -52,7 +52,7 @@ Each row represents the item name, choices of ingredients and price of that part
 
 2. How many orders do there appear to be?
 
-From the 'Order ID', it looks like there are a total of 1834 orders.
+From the column 'Order ID', it looks like there are a total of 1834 orders.
 
 3. How many lines are in this file?
 
@@ -124,7 +124,7 @@ find . -name "*.csv" -o -name "*.tsv"
 7. Count the approximate number of occurrences of the word "dictionary" (regardless of case) across all files of [our class repo] (https://github.com/ga-students/DS-SEA-8).
 
 ```
-grep -i -r dictionary . | wc -l
+grep -ir dictionary . | wc -l
 
 ```
 
