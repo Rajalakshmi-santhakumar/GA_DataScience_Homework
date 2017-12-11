@@ -65,8 +65,8 @@ There a a total of 4623 lines in the file 'chipotle.tsv'
 
 | Burrito_type| Code | Result|
 |---|---|---|
-| Steak Burrito|```grep -i "Steak Burrito" chipotle.tsv > SBchipotle.tsv | wc -l SBchipotle.tsv```| 368 |
-| Chicken Burrito | ```grep -i "Chicken Burrito" chipotle.tsv > CBchipotle.tsv | wc -l CBchipotle.tsv``` | 553 |
+| Steak Burrito|`grep -i "Steak Burrito" chipotle.tsv > SBchipotle.tsv \| wc -l SBchipotle.tsv`| 368 |
+| Chicken Burrito | `grep -i "Chicken Burrito" chipotle.tsv > CBchipotle.tsv \| wc -l CBchipotle.tsv` | 553 |
 
 Therefore, it appears that the Chicken burrito is popular than Steak burrito
 
@@ -74,8 +74,8 @@ Therefore, it appears that the Chicken burrito is popular than Steak burrito
 
 | Chicken Burrito_choice| Code | Result|
 |---|---|---|
-| Black Beans|``` grep -i "Chicken Burrito" chipotle.tsv > CBchipotle.tsv | grep -i "Black Beans" CBchipotle.tsv > CBBBchipotle.tsv |wc -l CBBBchipotle.tsv```| 282 |
-| Pinto beans | ```grep -i "Chicken Burrito" chipotle.tsv > CBchipotle.tsv | grep -i "Pinto Beans" CBchipotle.tsv > CBPBchipotle.tsv |wc -l CBPBchipotle.tsv``` | 105 |
+| Black Beans|` grep -i "Chicken Burrito" chipotle.tsv > CBchipotle.tsv \| grep -i "Black Beans" CBchipotle.tsv > CBBBchipotle.tsv \|wc -l CBBBchipotle.tsv`| 282 |
+| Pinto beans | `grep -i "Chicken Burrito" chipotle.tsv > CBchipotle.tsv \| grep -i "Pinto Beans" CBchipotle.tsv > CBPBchipotle.tsv \|wc -l CBPBchipotle.tsv` | 105 |
 
 Therefore, it appears that the Chicken burrito often have Black beans as compared to Pinto beans
 
