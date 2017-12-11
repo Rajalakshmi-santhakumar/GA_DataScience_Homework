@@ -13,7 +13,6 @@
 cd data
 head chipotle.tsv
 
-```
 order_id        quantity        item_name       choice_description      item_price
 1       1       Chips and Fresh Tomato Salsa    NULL    $2.39
 1       1       Izze    [Clementine]    $3.39
@@ -25,10 +24,7 @@ order_id        quantity        item_name       choice_description      item_pri
 4       1       Steak Burrito   [Tomatillo Red Chili Salsa, [Fajita Vegetables, Black Beans, Pinto Beans, Cheese, Sour Cream, Guacamole, Lettuce]]      $11.75
 4       1       Steak Soft Tacos        [Tomatillo Green Chili Salsa, [Pinto Beans, Cheese, Sour Cream, Lettuce]]       $9.25
 
-```
 tail chipotle.tsv
-
-```
 
 1831    1       Carnitas Bowl   [Fresh Tomato Salsa, [Fajita Vegetables, Rice, Black Beans, Cheese, Sour Cream, Lettuce]]       $9.25
 1831    1       Chips   NULL    $2.15
@@ -40,6 +36,8 @@ tail chipotle.tsv
 1834    1       Chicken Salad Bowl      [Fresh Tomato Salsa, [Fajita Vegetables, Pinto Beans, Guacamole, Lettuce]]      $11.25
 1834    1       Chicken Salad Bowl      [Fresh Tomato Salsa, [Fajita Vegetables, Lettuce]]      $8.75
 1834    1       Chicken Salad Bowl      [Fresh Tomato Salsa, [Fajita Vegetables, Pinto Beans, Lettuce]] $8.75
+
+```
 
 > What do you think each column means? 
 
@@ -67,8 +65,8 @@ There a a total of 4623 lines in the file 'chipotle.tsv'
 
 | Burrito_type| Code | Result|
 |---|---|---|
-| Steak Burrito|`grep -i "Steak Burrito" chipotle.tsv > SBchipotle.tsv | wc -l SBchipotle.tsv`| 368 |
-| Chicken Burrito | `grep -i "Chicken Burrito" chipotle.tsv > CBchipotle.tsv | wc -l CBchipotle.tsv` | 553 |
+| Steak Burrito|```grep -i "Steak Burrito" chipotle.tsv > SBchipotle.tsv | wc -l SBchipotle.tsv```| 368 |
+| Chicken Burrito | ```grep -i "Chicken Burrito" chipotle.tsv > CBchipotle.tsv | wc -l CBchipotle.tsv``` | 553 |
 
 Therefore, it appears that the Chicken burrito is popular than Steak burrito
 
@@ -76,8 +74,8 @@ Therefore, it appears that the Chicken burrito is popular than Steak burrito
 
 | Chicken Burrito_choice| Code | Result|
 |---|---|---|
-| Black Beans|` grep -i "Chicken Burrito" chipotle.tsv > CBchipotle.tsv | grep -i "Black Beans" CBchipotle.tsv > CBBBchipotle.tsv |wc -l CBBBchipotle.tsv`| 282 |
-| Pinto beans | `grep -i "Chicken Burrito" chipotle.tsv > CBchipotle.tsv | grep -i "Pinto Beans" CBchipotle.tsv > CBPBchipotle.tsv |wc -l CBPBchipotle.tsv` | 105 |
+| Black Beans|``` grep -i "Chicken Burrito" chipotle.tsv > CBchipotle.tsv | grep -i "Black Beans" CBchipotle.tsv > CBBBchipotle.tsv |wc -l CBBBchipotle.tsv```| 282 |
+| Pinto beans | ```grep -i "Chicken Burrito" chipotle.tsv > CBchipotle.tsv | grep -i "Pinto Beans" CBchipotle.tsv > CBPBchipotle.tsv |wc -l CBPBchipotle.tsv``` | 105 |
 
 Therefore, it appears that the Chicken burrito often have Black beans as compared to Pinto beans
 
@@ -86,7 +84,7 @@ Therefore, it appears that the Chicken burrito often have Black beans as compare
 ```
 cd ..
 find . -name "*.csv" -o -name "*.tsv"
-```
+
 ./data/airlines.csv
 ./data/Airline_on_time_west_coast.csv
 ./data/bank-additional.csv
@@ -120,6 +118,8 @@ find . -name "*.csv" -o -name "*.tsv"
 ./data/vehicles_train.csv
 ./data/yelp.csv
 ./notebooks/GMapJson.csv
+
+```
 
 7. Count the approximate number of occurrences of the word "dictionary" (regardless of case) across all files of [our class repo] (https://github.com/ga-students/DS-SEA-8).
 
