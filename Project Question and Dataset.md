@@ -9,7 +9,7 @@ Automatic speech recognition, i.e. translating of speech into text, is still a c
 
 ## Dataset: 
 
-The dataset that will be used for this project will be derived from this site: [Google Speech Commands Dataset (https://research.googleblog.com/2017/08/launching-speech-commands-dataset.html). 
+The dataset that will be used for this project will be derived from this site: [Google Speech Commands Dataset] (https://research.googleblog.com/2017/08/launching-speech-commands-dataset.html). 
 
 * This dataset contains a set of one-second .wav audio files, each containing a single spoken English word. These words are from a small set of commands, collected using crowdsourcing and are spoken by a variety of different speakers. 
 * Twenty core command words were recorded, with most speakers saying each of them five times. The core words are "Yes", "No", "Up", "Down", "Left", "Right", "On", "Off", "Stop", "Go", "Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", and "Nine". 
